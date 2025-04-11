@@ -1,6 +1,6 @@
-postgrest-py
 python-telegram-bot==20.7
 speechrecognition
 pydub
+postgrest-py
 python-dotenv
 aiohttp
