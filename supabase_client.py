@@ -1,7 +1,7 @@
 from supabase import create_client
 from config import SUPABASE_URL, SUPABASE_KEY
 
-supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
+supabase = create_client(SUPABASE_URL, SUPABASE_KEY, options={"auth": None})
 
 def register_user(telegram_id: int):
     res = supabase.table("users").select("id").eq("telegram_id", telegram_id).execute()
