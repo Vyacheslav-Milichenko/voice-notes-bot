@@ -1,6 +1,5 @@
 from telegram.ext import ApplicationBuilder
 from config import BOT_TOKEN
-
 from start import start_handler
 from voice import voice_handler
 from list_notes import list_handler
