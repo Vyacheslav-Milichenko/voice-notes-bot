@@ -1,6 +1,6 @@
 from telegram.ext import CommandHandler, ContextTypes
 from telegram import Update
-from db.supabase_client import register_user
+from supabase_client import register_user
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     register_user(update.effective_user.id)

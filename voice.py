@@ -4,7 +4,7 @@ from pydub import AudioSegment
 import speech_recognition as sr
 import os
 import tempfile
-from db.supabase_client import get_user_id, save_note
+from supabase_client import get_user_id, save_note
 
 async def voice(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = get_user_id(update.effective_user.id)

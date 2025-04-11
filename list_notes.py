@@ -1,6 +1,6 @@
 from telegram.ext import CommandHandler, ContextTypes
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
-from db.supabase_client import get_user_id, get_notes
+from supabase_client import get_user_id, get_notes
 
 async def list_notes(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = get_user_id(update.effective_user.id)

@@ -1,6 +1,6 @@
 from telegram.ext import CallbackQueryHandler, ContextTypes
 from telegram import Update
-from db.supabase_client import delete_note
+from supabase_client import register_user
 
 async def callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
